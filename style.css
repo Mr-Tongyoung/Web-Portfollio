@@ -115,9 +115,9 @@ nav {
 
 /* 사진 스타일 */
 .hero-photo img {
-    width: 260px;
+    width: 320px;
     /* 필요 시 320px 등으로 조절 */
-    height: 260px;
+    height: 320px;
     border-radius: 20%;
     /* 원형 */
     object-fit: cover;
@@ -332,6 +332,21 @@ nav {
     font-size: 0.9rem;
 }
 
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: .4rem;
+    /* 아이콘↔텍스트 간격 */
+    padding: .45rem 1.1rem;
+    font-size: .85rem;
+    font-weight: 500;
+    color: #667eea;
+    background: rgba(255, 255, 255, .06);
+    border: 1px solid rgba(102, 126, 234, .35);
+    border-radius: 30px;
+    transition: all .3s ease;
+}
+
 .project-tech {
     display: flex;
     flex-wrap: wrap;
@@ -449,6 +464,29 @@ nav {
         font-size: 1.2rem;
     }
 
+    /* 두 칼럼 → 세로 스택 */
+    .hero-inner {
+        flex-direction: column;
+        gap: 2rem;
+        /* 위·아래 간격 살짝 축소 */
+    }
+
+    /* 프로필 사진 : 화면에 맞춰 유동 크기 */
+    .hero-photo img {
+        width: 80vw;
+        /* 뷰포트의 80%만 사용 */
+        max-width: 320px;
+        /* 원본보다 더 커지지 않도록 한계치 */
+        height: auto;
+        /* 비율 유지 */
+        border-radius: 15px;
+    }
+
+    /* 사진 아래 텍스트 여백도 살짝 줄이면 좋음 */
+    .hero-text {
+        max-width: 90vw;
+    }
+
     .about-content {
         grid-template-columns: 1fr;
         gap: 2rem;
@@ -466,6 +504,21 @@ nav {
 
     .achievements {
         grid-template-columns: 1fr;
+    }
+
+    .project-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .project-link {
+        padding: .45rem 1rem;
+        font-size: .8rem;
+    }
+
+    .project-tech {
+        gap: .4rem .6rem;
     }
 }
 
