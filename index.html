@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>김준호 - Backend Developer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-indicator">
+        <div class="scroll-progress" id="scrollProgress"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">KIM JUNHO</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="social-icons">
+                <a href="https://github.com/Mr-Tongyoung" target="_blank"><img src="icons/github.png" alt="GitHub"></a>
+                <a href="https://velog.io/@junho_99/posts" target="_blank"><img src="icons/velog.png" alt="Velog"></a>
+                <a href="#"><img src="icons/linkedin.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+
+        <div class="hero-content">
+            <h1>김준호</h1>
+            <p class="subtitle">Backend Developer</p>
+            <p class="description">
+                문제를 해결하며 성장을 이끄는 개발자<br>
+                대용량 트래픽 처리와 성능 최적화를 통해 사용자 경험을 개선합니다
+            </p>
+            <a href="#projects" class="cta-button">프로젝트 보기</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <h3>깊이 있는 학습과 문제 해결</h3>
+                <p>저는 단순히 코드가 동작하는 수준을 넘어, 왜 이런 구조여야 하는지를 스스로 납득하고 정리해 나가는 과정에서 가장 큰 성취감을 느낍니다.</p>
+
+                <h3>실무 중심의 학습</h3>
+                <p>"실무에서는 어떻게 할까?"를 항상 생각하며 주도적으로 학습해왔습니다. 가상 사용자 3만명으로 부하테스트를 수행하고, 시스템을 모니터링하며 성능 개선점을 찾아 최적화했습니다.</p>
+
+                <h3>지식 공유와 협업</h3>
+                <p>팀 프로젝트에서 백엔드 리더로서 API 명세를 시각화하고, 핵심 기능을 구현한 뒤 코드 설명회를 통해 지식을 공유했습니다. 함께 성장할 때 더 큰 시너지가 난다는 것을 경험했습니다.
+                </p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-item">Java</div>
+                <div class="skill-item">Spring Boot</div>
+                <div class="skill-item">JPA</div>
+                <div class="skill-item">MySQL</div>
+                <div class="skill-item">PostgreSQL</div>
+                <div class="skill-item">Redis</div>
+                <div class="skill-item">Kafka</div>
+                <div class="skill-item">ElasticSearch</div>
+                <div class="skill-item">AWS S3</div>
+                <div class="skill-item">Docker</div>
+                <div class="skill-item">nGrinder</div>
+                <div class="skill-item">Grafana</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="projects-container">
+            <h2 class="section-title">Projects</h2>
+
+            <!-- Running SNS Project -->
+            <div class="project-card">
+                <div class="project-header">
+                    <div>
+                        <h3 class="project-title">Running-SNS</h3>
+                        <p class="project-period">2024.12 ~ 현재</p>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">Spring Boot</span>
+                        <span class="tech-tag">JPA</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">Redis</span>
+                        <span class="tech-tag">Kafka</span>
+                        <span class="tech-tag">ElasticSearch</span>
+                        <span class="tech-tag">AWS S3</span>
+                        <span class="tech-tag">React</span>
+                    </div>
+                </div>
+
+                <p class="project-description">
+                    대용량 트래픽 처리를 경험할 수 있는 달리기 테마 소셜 미디어 플랫폼입니다.
+                    달리기를 취미로 하는 사람들이 자신의 달리기 기록을 공유하고 경쟁하며 동기부여하는 애플리케이션입니다.
+                </p>
+
+                <div class="achievements">
+                    <div class="achievement-item">
+                        <div class="achievement-title">JWT 기반 인증 시스템</div>
+                        <div class="achievement-desc">확장성을 고려한 Stateless Authentication 구현, 평균 응답시간 50ms 이내 유지</div>
+                    </div>
+                    <div class="achievement-item">
+                        <div class="achievement-title">N+1 쿼리 최적화</div>
+                        <div class="achievement-desc">Fetch Join 활용으로 조회 API 평균 응답시간 2.7배 향상 (P95: 2500ms → 100ms)</div>
+                    </div>
+                    <div class="achievement-item">
+                        <div class="achievement-title">Redis 캐싱</div>
+                        <div class="achievement-desc">조회 속도 약 9배 향상, DB 부하 65% 감소 (P95: 100ms → 50ms)</div>
+                    </div>
+                    <div class="achievement-item">
+                        <div class="achievement-title">Kafka 비동기 처리</div>
+                        <div class="achievement-desc">Push 방식 캐시 업데이트로 POST 성능 향상, 게시글 생성 API 응답시간 200ms 이하 유지</div>
+                    </div>
+                    <div class="achievement-item">
+                        <div class="achievement-title">AWS S3 Presigned URL</div>
+                        <div class="achievement-desc">서버 부하 감소로 TPS 15→30 향상, 파일 업로드 시간 10초→2초 단축</div>
+                    </div>
+                    <div class="achievement-item">
+                        <div class="achievement-title">ElasticSearch 검색 최적화</div>
+                        <div class="achievement-desc">게시글 검색 시간 1200ms → 50ms로 40% 성능 향상</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Project -->
+            <div class="project-card">
+                <div class="project-header">
+                    <div>
+                        <h3 class="project-title">술게임 백과사전</h3>
+                        <p class="project-period">2024.06 ~ 2024.09</p>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">Spring Boot</span>
+                        <span class="tech-tag">GitHub Actions</span>
+                        <span class="tech-tag">CI/CD</span>
+                    </div>
+                </div>
+
+                <p class="project-description">
+                    팀 프로젝트로 진행한 술게임 정보 제공 서비스입니다. 백엔드 개발과 함께 CI/CD 파이프라인을 구축했습니다.
+                </p>
+
+                <div class="achievements">
+                    <div class="achievement-item">
+                        <div class="achievement-title">CI/CD 자동화</div>
+                        <div class="achievement-desc">GitHub Actions를 활용한 자동화 파이프라인 구축으로 배포 효율성 향상</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="contact-content">
+            <h2 class="section-title">Contact</h2>
+            <p style="color: #d0d0d0; font-size: 1.1rem; margin-bottom: 2rem;">
+                새로운 도전과 협업 기회를 기다리고 있습니다.<br>
+                언제든 연락주세요!
+            </p>
+
+            <div class="contact-links">
+                <a href="mailto:kokm333@gmail.com" class="contact-link">
+                    <span>📧</span>
+                    <span>kokm333@gmail.com</span>
+                </a>
+                <a href="https://github.com/Mr-Tongyoung" class="contact-link" target="_blank">
+                    <span>💻</span>
+                    <span>GitHub</span>
+                </a>
+                <a href="https://velog.io/@junho_99/posts" class="contact-link" target="_blank">
+                    <span>📝</span>
+                    <span>Velog</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Scroll progress indicator
+        window.addEventListener('scroll', () => {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById('scrollProgress').style.width = scrolled + '%';
+        });
+
+        // Intersection Observer for animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections for scroll animations
+        document.querySelectorAll('.project-card, .about-content, .contact-content').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'all 0.6s ease-out';
+            observer.observe(el);
+        });
+
+        // Active navigation highlighting
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-links a');
+
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
