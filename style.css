@@ -153,7 +153,7 @@ nav {
 /* Floating particles */
 .particle {
     position: absolute;
-    background: rgba(102, 126, 234, 0.3);
+    background: rgba(242, 110, 226, 0.3);
     border-radius: 50%;
     animation: float 6s ease-in-out infinite;
 }
@@ -221,23 +221,47 @@ nav {
 
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     gap: 1rem;
 }
 
 .skill-item {
     background: rgba(255, 255, 255, 0.05);
-    padding: 1rem;
+    padding: 1.3rem 0.8rem;
     border-radius: 15px;
     text-align: center;
     transition: all 0.3s ease;
     border: 1px solid rgba(102, 126, 234, 0.2);
 }
 
+.skill-item i,
+.skill-item img,
+.skill-item span:first-child {
+    /* 이모지 fallback */
+    font-size: 2.2rem;
+    /* 폰트아이콘 크기 */
+    height: 34px;
+    /* 정렬 보정 */
+}
+
+.skill-item span:last-child {
+    display: block;
+    margin-top: 0.6rem;
+    font-size: 0.85rem;
+    color: #d0d0d0;
+}
+
 .skill-item:hover {
     transform: translateY(-5px);
     background: rgba(102, 126, 234, 0.1);
     box-shadow: 0 10px 30px rgba(102, 126, 234, 0.2);
+}
+
+.icon-svg {
+    /* Simple Icons SVG 통일 스타일 */
+    width: 2.2rem;
+    height: 2.2rem;
+    filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.4));
 }
 
 /* Projects Section */
